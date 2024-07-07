@@ -1,0 +1,166 @@
+/* #topBoard{
+    display: grid;
+    text-align: center; 
+    margin-top: 40px;
+    background-color: rgb(157, 157, 255); 
+} */
+
+#category {
+    padding-top: 3rem;
+    display: grid; 
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+.component{
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+
+.component h2{
+    padding-bottom: 10px;
+    color: orange;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.7);
+}
+
+.rectangle {
+    width: 70%; 
+    border: 2px solid orange; 
+    border-radius: 10px; 
+    margin: 50px auto; 
+    color: white;
+    transition: transform 0.3s ease;
+}
+.rectangle:hover {
+    transform: scale(1.05); /* Scales the div to 110% of its original size */
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    position: relative;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./wall.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.2; 
+    pointer-events: none; 
+    z-index: -1;
+  }
+  
+.navbar .nav-link{
+    color: rgba(230, 255, 1, 0.54);
+    font-size:15px;
+    
+}
+.navbar .nav-link:hover{
+    font-size:10px;
+    color: aliceblue;
+} 
+.nav-item:hover{
+    font-size:10px;
+    color: red;
+} 
+
+.dropdownMenu{
+    width:90%;
+    display:none;
+}
+.dropdown:hover .dropdownMenu{
+    display:block;
+}
+
+/* .dropdown{
+    position:relative;
+} */
+footer div{
+   padding: 10px;
+   font-size:17px;
+   font-weight: bold;
+   text-align: center;
+   height:50px;
+   /* background-color: rgb(230, 255, 1);
+   color: green; */
+   color: orange;
+}
+
+.glassy-footer {
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(122, 144, 218, 0.2); 
+    backdrop-filter: blur(10px); 
+    color: rgb(230, 255, 1);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.message {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.glassy-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.glassy-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#options {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#options li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#options li::before {
+    content: '';
+    background-image: url('./pngtree-white-cricket-ball-png-3d-vector-image-png-image_1083459.jpg'); 
+    background-size: cover;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -30px; 
+    top: 6px; 
+}
